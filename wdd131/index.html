@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Yishak Endale</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Yishak Endale, This is the page for my WDD131 course.">
+    <meta name="author" content="Yishak Endale">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Yishak Endale</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section">
+            <div class="card">
+                <h2>About Me</h2>
+                <img src="images/p2.png" alt="About me">
+                <p>My name is Yishak Endale. I am living in the capital city of Ethiopia, Addis Ababa. I am a student at BYU PathwayConnect in the degree program. I want to be a full-stack developer. I love reading books and watching and playing football.</p>
+                <p>Resources:</p>
+                <ul>
+                    <li><a href="https://example.com/resource1">Resource Link 1</a></li>
+                    <li><a href="https://example.com/resource2">Resource Link 2</a></li>
+                    <li><a href="https://example.com/resource3">Resource Link 3</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Addis Ababa, Ethiopia</h2>
+                <img src="images/p3.jpg" alt="Flag of Ethiopia">
+                <p>Ethiopia, located in the Horn of Africa, is known for its rich history and diverse cultures. It's one of the oldest nations in the world, with archaeological findings suggesting human habitation for millions of years. The country is famous for its unique coffee culture, ancient churches, and the historic city of Lalibela, a UNESCO World Heritage site. Ethiopia is also notable for being the origin of the coffee bean and for its vibrant traditions, languages (over 80), and landscapes ranging from mountains to deserts. Its capital, Addis Ababa, serves as a significant political and cultural center in Africa.</p>
+                <p>Resources:</p>
+                <ul>
+                    <li><a href="https://example.com/resource4">Resource Link 4</a></li>
+                    <li><a href="https://example.com/resource5">Resource Link 5</a></li>
+                    <li><a href="https://example.com/resource6">Resource Link 6</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Yishak Endale, Ethiopia, Addis Ababa.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // JavaScript to populate current year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = 'Last modified: ' + document.lastModified;
+    </script>
+</body>
+</html>
